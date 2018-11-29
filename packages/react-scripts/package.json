@@ -1,7 +1,7 @@
 {
   "name": "bitloop-react-scripts",
   "version": "2.1.1",
-  "description": "Bitloop labs Configuration and scripts for Create React App.",
+  "description": "Bitloop Labs Configuration and scripts for Create React App.",
   "repository": "volkancakil/create-react-app",
   "license": "MIT",
   "engines": {
