@@ -1,8 +1,8 @@
 {
-  "name": "react-scripts",
+  "name": "bitloop-react-scripts",
   "version": "2.1.1",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "description": "Bitloop Labs Configuration and scripts for Create React App.",
+  "repository": "volkancakil/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
@@ -70,7 +70,8 @@
     "webpack": "4.19.1",
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "3.6.3"
+    "workbox-webpack-plugin": "3.6.3",
+    "webpack-dashboard": "^2.0.0"
   },
   "devDependencies": {
     "react": "^16.3.2",

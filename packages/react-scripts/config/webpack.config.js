@@ -12,6 +12,7 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const resolve = require('resolve');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -641,7 +642,8 @@ module.exports = function(webpackEnv) {
           watch: paths.appSrc,
           silent: true,
           formatter: typescriptFormatter,
-        }),
+      }),
+      new DashboardPlugin()
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
