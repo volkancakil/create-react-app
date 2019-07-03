@@ -71,7 +71,8 @@
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3",
-    "webpack-dashboard": "^2.0.0"
+    "webpack-dashboard": "^2.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "react": "^16.3.2",
@@ -85,5 +86,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
